@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1a73e8;
+}
+
+.user-profile {
+    background-color: #f1f3f4;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #5f6368;
+    border: 1px solid #e0e0e0;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+    min-height: calc(100vh - 88px);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.hero-content .highlight-text {
+    color: #4a6cf7;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 480px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(74, 108, 247, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #3554d1;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    animation: laundryMotion 3s linear infinite;
+}
+
+@keyframes laundryMotion {
+   
+
+    0%{
+        transform: scale(1) translate(0,0);
+    }
+
+    25%{
+        transform: scaleY(1.1) scaleX(0.9) translate(10px,-10px);
+    }
+
+    50%{
+        transform: scale(1) translate(20px,10px);
+    }
+
+    75%{
+        transform: scaleY(0.9) scaleX(1.1) translate(-10px,10px);
+    }
+
+    100%{
+        transform: scale(1) translate(0,0);
+    }
+
+}
+
